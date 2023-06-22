@@ -147,6 +147,7 @@ function get_run_final_result {
     # Export results to be used in subsequent notification steps
     envman add --key BITRISE_DEVICEFARM_RESULTS_RAW --value "$run_final_details"
     envman add --key BITRISE_DEVICEFARM_RESULTS_SUMMARY --value "$run_final_details_summary"
+    envman add --key DEVICEFARM_RUN_ARN --value "$run_arn"
 
 }
 
