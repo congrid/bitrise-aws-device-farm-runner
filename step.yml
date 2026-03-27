@@ -57,6 +57,11 @@ inputs:
           - "METERED"
           - "UNMETERED"
       is_required: false
+  - execution_timeout_minutes: "45"
+    opts:
+      title: "Job execution timeout (minutes)"
+      summary: "Maximum number of minutes a test run job is allowed to execute. AWS maximum is 150."
+      is_required: false
   - locale: "en_US"
     opts:
       title: "The locale for the devices to use"
